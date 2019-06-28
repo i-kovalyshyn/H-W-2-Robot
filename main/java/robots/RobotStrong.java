@@ -1,13 +1,11 @@
 package main.java.robots;
 
-public class RobotStrong {
+public class RobotStrong implements Robot {
 
     private String name;
     private String version;
 
-    public RobotStrong() {
 
-    }
 
     public RobotStrong(String name, String version) {
         this.name = name;
@@ -15,14 +13,15 @@ public class RobotStrong {
     }
 
     public void speak() {
-        System.out.println("Robot: " + name + " speaks");
+        System.out.println("Robot " + name + ": speaks");
+
 
     }
     public void walk (){
-        System.out.println("Robot: "+ name + "runs every morning");
+        System.out.println("Robot "+ name + ": runs every morning");
     }
     public void shoot (){
-        System.out.println("Robot: "+ name + "bah-bah");
+        System.out.println("Robot "+ name + ": bah-bah");
     }
     public  void showVersion (){
         System.out.println("Robot ver. is: "+ version);
