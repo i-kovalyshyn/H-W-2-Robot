@@ -1,3 +1,5 @@
+package main.java;
+
 import main.java.messages.Messages;
 import main.java.robots.RobotBig;
 import main.java.robots.RobotSmall;
@@ -17,9 +19,10 @@ public class Main {
         Random random = new Random();
         int choice = random.nextInt(12) + 1;
 
-        RobotStrong robotMulti = new RobotStrong("Strong", "01.00.a");
+        RobotStrong robotMulti;
 
         if (choice <= 3) {
+            robotMulti = new RobotStrong("Strong", "01.00.a");
             robotMulti.speak();
             robotMulti.shoot();
             robotMulti.walk();
